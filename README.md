@@ -25,7 +25,7 @@ git clone https://github.com/MoonRivers21/v2-taskapp.git
 Navigate to the Project Directory:
 
 ```sh
-cd taskapp10
+cd v2-taskapp
 ```
 
 Install PHP dependencies:
