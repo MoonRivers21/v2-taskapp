@@ -2,10 +2,11 @@
 
 ## Requirements
 
-| Tools   | Description |
-|---------|-------------|
-| PHP     | 8.0 >= 8.2  |
-| Laravel | 10.*        |
+| Tools   | Description     |
+|---------|-----------------|
+| PHP     | 8.0 >= 8.2      |
+| Laravel | 10.*            |
+| Node js | 20.*  or latest |
 
   <br>
 
@@ -25,7 +26,7 @@ git clone https://github.com/MoonRivers21/v2-taskapp.git
 Navigate to the Project Directory:
 
 ```sh
-cd v2-taskapp
+cd taskapp10
 ```
 
 Install PHP dependencies:
@@ -55,7 +56,6 @@ Run database migrations:
 php artisan migrate
 ```
 
- 
 Create a symlink to the storage:
 
 ```sh
@@ -66,6 +66,14 @@ Run the dev server (the output will give the address):
 
 ```sh
 php artisan serve
+```
+
+<br><br>
+
+Install node and build the manifest file:
+
+```sh
+npm install && npm run build
 ```
 
 <br><br>
