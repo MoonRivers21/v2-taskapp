@@ -34,36 +34,36 @@
 
                     <div class="inline-flex rounded-md shadow-sm" role="group">
                         {{-- View Button--}}
-                        <x-taskComponents.view-button
+                        <x-task-components.view-button
                             taskId="{{$inProgress->id}}">
                             <i class="far fa-eye"></i>
-                        </x-taskComponents.view-button>
+                        </x-task-components.view-button>
 
                         {{-- Edit Button--}}
-                        <x-taskComponents.edit-button
+                        <x-task-components.edit-button
                             taskId="{{$inProgress->id}}"
                             isAuthorize="{{$inProgress->isAuthorizeToEdit($inProgress)}}">
                             <i class="fas fa-edit"></i>
-                        </x-taskComponents.edit-button>
+                        </x-task-components.edit-button>
 
                         {{-- To-do Button--}}
-                        <x-taskComponents.todo-button taskId="{{$inProgress->id}}"
+                        <x-task-components.todo-button taskId="{{$inProgress->id}}"
                                                       isAuthorize="{{$inProgress->handlePolicyMarkAsTodo($inProgress)}}">
                             <i class="far fa-clipboard-list-check"></i>
-                        </x-taskComponents.todo-button>
+                        </x-task-components.todo-button>
 
                         {{-- Done Button--}}
-                        <x-taskComponents.done-button
+                        <x-task-components.done-button
                             taskId="{{$inProgress->id}}"
                             isAuthorize="{{$inProgress->handlePolicyMarkDone($inProgress)}}">
                             <i class="fas fa-clipboard-check text-green-900"></i>
-                        </x-taskComponents.done-button>
+                        </x-task-components.done-button>
 
                         <!-- Delete button with modal trigger -->
-                        <x-taskComponents.trash-button
+                        <x-task-components.trash-button
                             taskId="{{$inProgress->id}}">
                             <i class="fas fa-trash"></i>
-                        </x-taskComponents.trash-button>
+                        </x-task-components.trash-button>
                     </div>
 
                 </div>
