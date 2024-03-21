@@ -34,21 +34,21 @@
 
                     <div class="inline-flex rounded-md shadow-sm" role="group">
                         {{-- View Button--}}
-                        <x-taskComponents.view-button taskId="{{$draft->id}}">
+                        <x-task-components.view-button taskId="{{$draft->id}}">
                             <i class="far fa-eye"></i>
-                        </x-taskComponents.view-button>
+                        </x-task-components.view-button>
 
 
                         {{-- Edit Button--}}
-                        <x-taskComponents.edit-button taskId="{{$draft->id}}"
+                        <x-task-components.edit-button taskId="{{$draft->id}}"
                                                       isAuthorize="{{$draft->isAuthorizeToEdit($draft)}}">
                             <i class="fas fa-edit"></i>
-                        </x-taskComponents.edit-button>
+                        </x-task-components.edit-button>
 
                         {{-- Publish Button--}}
-                        <x-taskComponents.publish-button taskId="{{$draft->id}}">
+                        <x-task-components.publish-button taskId="{{$draft->id}}">
                             <i class="fas fa-globe-asia"></i>
-                        </x-taskComponents.publish-button>
+                        </x-task-components.publish-button>
 
                         <!-- Delete button with modal trigger -->
                         <button
