@@ -14,7 +14,7 @@
                 <div class="p-6 text-gray-900">
                     <div class="py-4 flex justify-end gap-x-3">
                         {{-- Filter options --}}
-                        <x-taskComponents.filter-status/>
+                        <x-task-components.filter-status/>
 
                         {{-- Create Button --}}
                         <div class="flex items-center">
@@ -27,10 +27,10 @@
                     </div>
                     <div class="grid grid-cols-2">
                         {{-- Label Indicator  --}}
-                        <x-taskComponents.label-indicator/>
+                        <x-task-components.label-indicator/>
 
                         {{--  Search Textbox  --}}
-                        <x-taskComponents.search-textbox/>
+                        <x-task-components.search-textbox/>
                     </div>
                     <div class="relative overflow-x-auto">
                         <table class="min-w-full divide-y divide-gray-200 border">
@@ -131,38 +131,38 @@
                                     <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
                                         <div class="inline-flex rounded-md shadow-sm" role="group">
                                             {{-- View Button--}}
-                                            <x-taskComponents.view-button taskId="{{$task->id}}">
+                                            <x-task-components.view-button taskId="{{$task->id}}">
                                                 <i class="far fa-eye"></i>
-                                            </x-taskComponents.view-button>
+                                            </x-task-components.view-button>
 
                                             {{-- Edit Button--}}
-                                            <x-taskComponents.edit-button taskId="{{$task->id}}"
+                                            <x-task-components.edit-button taskId="{{$task->id}}"
                                                                           isAuthorize="{{$task->isAuthorizeToEdit($task)}}">
                                                 <i class="fas fa-edit"></i>
-                                            </x-taskComponents.edit-button>
+                                            </x-task-components.edit-button>
 
                                             {{-- To-do Button--}}
-                                            <x-taskComponents.todo-button taskId="{{$task->id}}"
+                                            <x-task-components.todo-button taskId="{{$task->id}}"
                                                                           isAuthorize="{{$task->handlePolicyMarkAsTodo($task)}}">
                                                 <i class="far fa-clipboard-list-check"></i>
-                                            </x-taskComponents.todo-button>
+                                            </x-task-components.todo-button>
 
                                             {{-- In Progress Button--}}
-                                            <x-taskComponents.inprogress-button taskId="{{$task->id}}"
+                                            <x-task-components.inprogress-button taskId="{{$task->id}}"
                                                                                 isAuthorize="{{$task->handlePolicyMarkInProgress($task)}}">
                                                 <i class="far fa-business-time"></i>
-                                            </x-taskComponents.inprogress-button>
+                                            </x-task-components.inprogress-button>
 
                                             {{-- Done Button--}}
-                                            <x-taskComponents.done-button taskId="{{$task->id}}"
+                                            <x-task-components.done-button taskId="{{$task->id}}"
                                                                           isAuthorize="{{$task->handlePolicyMarkDone($task)}}">
                                                 <i class="fas fa-clipboard-check text-green-900"></i>
-                                            </x-taskComponents.done-button>
+                                            </x-task-components.done-button>
 
                                             <!-- Trash button with modal trigger -->
-                                            <x-taskComponents.trash-button taskId="{{$task->id}}">
+                                            <x-task-components.trash-button taskId="{{$task->id}}">
                                                 <i class="fas fa-trash"></i>
-                                            </x-taskComponents.trash-button>
+                                            </x-task-components.trash-button>
                                         </div>
 
                                     </td>
