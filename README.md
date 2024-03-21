@@ -55,12 +55,7 @@ Run database migrations:
 php artisan migrate
 ```
 
-Run database seeder:
-
-```sh
-php artisan db:seed
-```
-
+ 
 Create a symlink to the storage:
 
 ```sh
