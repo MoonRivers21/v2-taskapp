@@ -30,37 +30,37 @@
 
                     <div class="inline-flex rounded-md shadow-sm" role="group">
                         {{-- View Button--}}
-                        <x-taskComponents.view-button
+                        <x-task-components.view-button
                             taskId="{{$todo->id}}">
                             <i class="far fa-eye"></i>
-                        </x-taskComponents.view-button>
+                        </x-task-components.view-button>
 
                         {{-- Edit Button--}}
-                        <x-taskComponents.edit-button
+                        <x-task-components.edit-button
                             taskId="{{$todo->id}}"
                             isAuthorize="{{$todo->isAuthorizeToEdit($todo)}}">
                             <i class=" far fa-edit"></i>
-                        </x-taskComponents.edit-button>
+                        </x-task-components.edit-button>
 
                         {{-- In Progress Button--}}
-                        <x-taskComponents.inprogress-button
+                        <x-task-components.inprogress-button
                             taskId="{{$todo->id}}"
                             isAuthorize="{{$todo->isAuthorizeToEdit($todo)}}">
                             <i class="far fa-business-time"></i>
-                        </x-taskComponents.inprogress-button>
+                        </x-task-components.inprogress-button>
 
                         {{-- Done Button--}}
-                        <x-taskComponents.done-button
+                        <x-task-components.done-button
                             taskId="{{$todo->id}}"
                             isAuthorize="{{$todo->isAuthorizeToEdit($todo)}}">
                             <i class="fas fa-clipboard-check text-green-900"></i>
-                        </x-taskComponents.done-button>
+                        </x-task-components.done-button>
 
 
                         <!-- Delete button with modal trigger -->
-                        <x-taskComponents.trash-button taskId="{{$todo->id}}">
+                        <x-task-components.trash-button taskId="{{$todo->id}}">
                             <i class="fas fa-trash"></i>
-                        </x-taskComponents.trash-button>
+                        </x-task-components.trash-button>
                     </div>
 
                 </div>
