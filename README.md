@@ -62,18 +62,18 @@ Create a symlink to the storage:
 php artisan storage:link
 ```
 
-Run the dev server (the output will give the address):
-
-```sh
-php artisan serve
-```
-
 <br><br>
 
 Install node and build the manifest file:
 
 ```sh
 npm install && npm run build
+```
+
+Run the dev server (the output will give the address):
+
+```sh
+php artisan serve
 ```
 
 <br><br>
