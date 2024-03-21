@@ -96,6 +96,10 @@ You're ready to go! Visit the url in your browser, and signup:
 
 <br> 
 
+
+- #### Auto Remove task
+    - Created task will be removed if older than 30d
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
