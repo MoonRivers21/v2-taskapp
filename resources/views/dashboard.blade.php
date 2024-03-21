@@ -57,7 +57,7 @@
                                         </a>
                                     </div>
                                     <div class="overflow-y-auto" style="max-height: 300px">
-                                        <x-taskComponents.tab-todo :taskTodo="$todotask"/>
+                                        <x-task-components.tab-todo :taskTodo="$todotask"/>
 
                                     </div>
                                 </div>
@@ -80,7 +80,7 @@
                                         </a>
                                     </div>
                                     <div class="overflow-y-auto overflow-x-hidden" style="max-height: 350px">
-                                        <x-taskComponents.tab-draft :taskDraft="$draftTasks"/>
+                                        <x-task-components.tab-draft :taskDraft="$draftTasks"/>
                                     </div>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@
                                         </a>
                                     </div>
                                     <div class="overflow-y-auto overflow-x-hidden" style="max-height: 350px">
-                                        <x-taskComponents.tab-inprogress :taskProgress="$inProgressTasks"/>
+                                        <x-task-components.tab-inprogress :taskProgress="$inProgressTasks"/>
 
                                     </div>
                                 </div>
