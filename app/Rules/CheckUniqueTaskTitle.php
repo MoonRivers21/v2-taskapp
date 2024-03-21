@@ -8,10 +8,10 @@ use Illuminate\Support\Facades\Auth;
 
 class CheckUniqueTaskTitle implements Rule
 {
-    protected $taskId;
-    protected $currentTitle;
+    protected int|string|null $taskId;
+    protected string|null $currentTitle;
 
-    public function __construct($taskId, $currentTitle)
+    public function __construct(int|string|null $taskId, string|null $currentTitle)
     {
         $this->taskId = $taskId;
         $this->currentTitle = $currentTitle;
@@ -33,7 +33,7 @@ class CheckUniqueTaskTitle implements Rule
         return !$exists;
     }
 
-    public function message()
+    public function message(): string
     {
         return 'The title must be unique.';
     }
