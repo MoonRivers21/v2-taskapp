@@ -28,7 +28,10 @@ class DeleteOldTasks extends Command
     public function handle(): void
     {
         $thresholdDate = Carbon::now()->subDays(30);
-        Task::where('created_at', '<', $thresholdDate)->delete();
+          Task::where('created_at', '<', $thresholdDate)
+            ->where('published', PublishStatus::PUBLISHED)
+            ->where('status', TaskStatus::DONE)
+            ->delete();
         $this->info('Old tasks deleted successfully.');
     }
 }
