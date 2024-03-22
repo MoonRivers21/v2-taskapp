@@ -98,7 +98,12 @@ You're ready to go! Visit the url in your browser, and signup:
 
 
 - #### Auto Remove task
-    - Created task will be removed if older than 30d (Scripts will be triggered only via online)
+    - Created task will be removed if older than 30d (Scripts will be triggered only via online) or run the command  
+
+```sh
+php artisan tasks:delete-old
+```
+<br>
 
 ## License
 
