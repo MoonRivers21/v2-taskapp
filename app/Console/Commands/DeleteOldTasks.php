@@ -2,6 +2,8 @@
 
 namespace App\Console\Commands;
 
+use App\Enums\PublishStatus;
+use App\Enums\TaskStatus;
 use App\Models\Task;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
